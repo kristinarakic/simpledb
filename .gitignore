@@ -1,0 +1,19 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java build
+out/
+target/
+bin/
+
+# SimpleDB data (ako se generiše)
+raf-simpledb/**/metadata/
+raf-simpledb/**/data/*.tbl
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

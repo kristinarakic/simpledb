@@ -1,0 +1,168 @@
+pid,predNaziv,predSmerId,predGod
+1,Linearna algebra i analitička geometrija,1,1
+2,Diskretne strukture,1,1
+3,Uvod u programiranje,1,1
+4,Engleski 1,1,1
+5,Poslovne aplikacije,1,1
+6,Matematička analiza,1,1
+7,Osnovi računarskih sistema,1,1
+8,Objektno-orijentisano programiranje,1,1
+9,Engleski 2,1,1
+10,Pismeno i usmeno izražavanje,1,1
+11,Algoritmi i strukture podataka,1,2
+12,Dizajn softvera,1,2
+13,Inteligentni sistemi,1,2
+14,Uvod u softversko inženjerstvo,1,2
+15,Operativni sistemi,1,2
+16,Računarske mreže,1,2
+17,Uvod u baze podataka,1,2
+18,Arhitektura računara,1,2
+19,Napredne baze podataka,1,3
+20,Razvoj softvera,1,3
+21,Testiranje softvera,1,3
+22,Uvod u računarsku bezbednost,1,3
+23,Testiranje bezbednosti softvera,1,3
+24,Šel programiranje,1,3
+25,Održavanje i reinženjering softvera,1,3
+26,Paralelni algoritmi,1,3
+27,Računarska grafika,1,3
+28,Programski prevodioci,1,3
+29,Programiranje sistema,1,3
+30,Interakcija čovek-računar,1,3
+31,Softverski procesi,1,3
+32,Kriptografija,1,3
+33,Bezbednost veb servisa,1,3
+34,Alati softverskog inženjerstva,1,3
+35,Konstrukcija softvera,1,3
+36,Razvoj veb aplikacija,1,3
+37,Razvoj mobilnih aplikacija,1,3
+38,Paradigme programiranja,1,3
+39,Veliki podaci,1,4
+40,Upravljanje projektima,1,4
+41,Bezbednost softvera,1,4
+42,Pouzdani softverski sistemi,1,4
+43,DevOps,1,4
+44,Upravljanje konfiguracijom,1,4
+45,Data centar infrastruktura,1,4
+46,Primenjena veštačka inteligencija,1,4
+47,Razvoj računarskih igara,1,4
+48,Arhitektura podataka,1,4
+49,Teorija algoritama automata i jezika,1,4
+50,Namenski računarski sistemi,1,4
+51,Primenjeni distribuirani sistemi,1,4
+52,Linearna algebra i analitička geometrija,2,1
+53,Diskretne strukture,2,1
+54,Uvod u programiranje,2,1
+55,Engleski 1,2,1
+56,Poslovne aplikacije,2,1
+57,Matematička analiza,2,1
+58,Osnovi računarskih sistema,2,1
+59,Objektno-orijentisano programiranje,2,1
+60,Engleski 2,2,1
+61,Pismeno i usmeno izražavanje,2,1
+62,Osnovi elektronike,2,2
+63,Algoritmi i strukture podataka,2,2
+64,Napredna matematička analiza,2,2
+65,Signali i sistemi,2,2
+66,Računarske mreže,2,2
+67,Arhitektura računara,2,2
+68,Operativni sistemi,2,2
+69,Digitalne komunikacije,2,2
+70,Verovatnoća i statistika,2,3
+71,Primenjena veštačka inteligencija,2,3
+72,Skript jezici,2,3
+73,Sistemsko programiranje,2,3
+74,Testiranje softvera,2,3
+75,Projektovanje računarskih sistema,2,3
+76,Uvod u računarsku bezbednost,2,3
+77,Virtuelizovani mrežni sistemi,2,3
+78,Sistemi u realnom vremenu,2,3
+79,Fiziološko računarstvo,2,3
+80,Bezbednost operativnih sistema,2,3
+81,Testiranje bezbednosti softvera,2,3
+82,Kompresija podataka,2,3
+83,Kodovanje i teorija informacija,2,3
+84,Veb programiranje,2,3
+85,Integrisani informacioni sistemi,2,3
+86,Razvoj mobilnih aplikacija,2,3
+87,Tehnologije komutiranja,2,3
+88,Tehnologije rutiranja,2,3
+89,Povezivanje mreža,2,3
+90,Interfejs mozak-računar,2,3
+91,Digitalna obrada slike,2,3
+92,Senzori i aktuatori,2,3
+93,Bezbednost LAN mreža,2,3
+94,Primena veštačke inteligencije u računarskoj bezbednosti,2,3
+95,Bezbednost veb servisa,2,3
+96,Bežične i mobilne komunikacije,2,4
+97,Upravljanje projektima,2,4
+98,Mikroservisne aplikacije,2,4
+99,Napredno veb programiranje,2,4
+100,Veliki podaci,2,4
+101,Data centar infrastruktura,2,4
+102,Računarske mreže velikih sistema,2,4
+103,Internet stvari,2,4
+104,Uvod u robotiku,2,4
+105,Kompjuterski vid,2,4
+106,Socijalno inženjerstvo,2,4
+107,Etika računarske bezbednosti,2,4
+108,Bezbednost bežičnih mreža,2,4
+109,Digitalna obrada signala,2,4
+110,Namenski računarski sistemi,2,4
+111,Primenjeni distribuirani sistemi,2,4
+112,Linearna algebra i analitička geometrija,3,1
+113,Diskretne strukture,3,1
+114,Uvod u programiranje,3,1
+115,Engleski 1,3,1
+116,Poslovne aplikacije,3,1
+117,Matematička analiza,3,1
+118,Osnovi računarskih sistema,3,1
+119,Objektno-orijentisano programiranje,3,1
+120,Engleski 2,3,1
+121,Pismeno i usmeno izražavanje,3,1
+122,Algoritmi i strukture podataka,3,2
+123,Dizajn softvera,3,2
+124,Inteligentni sistemi,3,2
+125,Napredna matematička analiza,3,2
+126,Operativni sistemi,3,2
+127,Računarske mreže,3,2
+128,Baze podataka,3,2
+129,Dizajn i analiza algoritama,3,2
+130,Verovatnoća i statistika,3,3
+131,Programski prevodioci,3,3
+132,Upravljanje informacijama,3,3
+133,Paralelni algoritmi,3,3
+134,Osnovi nauke o podacima,3,3
+135,Uvod u pronalaženje informacija,3,3
+136,Uvod u robotiku,3,3
+137,Geometrijski algoritmi,3,3
+138,Računarska grafika,3,3
+139,Testiranje softvera,3,3
+140,Softverske komponente,3,3
+141,Skript jezici,3,3
+142,Interakcija čovek-računar,3,3
+143,Algebra,3,3
+144,Uvod u bioinformatiku,3,3
+145,Mašinsko učenje,3,3
+146,Analitika i vizuelizacija podataka,3,3
+147,Genetski algoritmi,3,3
+148,Neuronske mreže,3,3
+149,Kriptografija,3,3
+150,Funkcionalno programiranje,3,3
+151,Veb programiranje,3,3
+152,Integrisani informacioni sistemi,3,3
+153,Razvoj mobilnih aplikacija,3,3
+154,Kombinatorika i teorija grafova,3,4
+155,Upravljanje projektima,3,4
+156,Veliki podaci,3,4
+157,Duboko učenje,3,4
+158,Skladišta podataka,3,4
+159,Prepoznavanje govora,3,4
+160,Kompjuterski vid,3,4
+161,Modelovanje i simulacija,3,4
+162,Kvantno računarstvo,3,4
+163,Multimedijalni informacioni sistemi,3,4
+164,Napredno veb programiranje,3,4
+165,Teorija algoritama automata i jezika,3,4
+166,Softversko inženjerstvo,3,4
+167,Konkurentni i distribuirani sistemi,3,4
