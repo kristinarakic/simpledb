@@ -9,106 +9,134 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class InitKolokvijumDB {
-	
+
 	public static boolean initDB(String dbName) {
-		// Kreiranje baze podataka, sto podrazumeva fajl sa podacima i podatke u sistemskom katalogu
+		// Kreiranje baze podataka
 		return SimpleDBEngine.init(dbName);
 	}
-	
+
 	public static void createDBTables() throws JSQLParserException {
-		String createTableSQL = "create table STUDENT(sid int, studname varchar(35), smerId int, godStud int, godUpis int, godDipl int)";
-		
+
+		String createTableSQL =
+				"create table student(" +
+						"sid int, studname varchar(35), smerid int, godstud int, godupis int, goddipl int)";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table STUDENT created.");
-		
-		
-		createTableSQL = "create table SMER(smid int, smerName varchar(25))";
+		System.out.println("Table student created.");
+
+		createTableSQL =
+				"create table smer(" +
+						"smid int, smername varchar(25))";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table SMER created.");
-		
-		
-		createTableSQL = "create table PREDMET(pid int, predNaziv varchar(25), predSmerId int, predGod int)";
+		System.out.println("Table smer created.");
+
+		createTableSQL =
+				"create table predmet(" +
+						"pid int, prednaziv varchar(25), predsmerid int, predgod int)";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table PREDMET created.");
-		
-		
-		createTableSQL = "create table ISPITNIROK(rokId int, ispRokNaziv varchar(25))";
+		System.out.println("Table predmet created.");
+
+		createTableSQL =
+				"create table ispitnirok(" +
+						"rokid int, isproknaziv varchar(25))";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table ISPITNI ROK created.");
-		
-		
-		createTableSQL = "create table ISPIT(ispid int, predmetid int, ispitniRokId int, ispUGod int, ispDatum varchar(25))";
+		System.out.println("Table ispitnirok created.");
+
+		createTableSQL =
+				"create table ispit(" +
+						"ispid int, predmetid int, ispitnirokid int, ispugod int, ispdatum varchar(25))";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table ISPIT created.");
-		
-		
-		createTableSQL = "create table POLAGANJE(polagStudId int, ispitId int, ocena int)";
+		System.out.println("Table ispit created.");
+
+		createTableSQL =
+				"create table polaganje(" +
+						"polagstudid int, ispitid int, ocena int)";
 		MainQueryRunner.executeSQLUpdate(createTableSQL);
-		System.out.println("Table POLAGANJE created.");
-		
-				
+		System.out.println("Table polaganje created.");
 	}
-	
+
 	public static void genericInsertDBData() {
-		
+
 		try {
-			
-			insertTableDataGeneric("raf-simpledb/data/studenti.csv", "STUDENT",
-					"insert into STUDENT(sid, studname, smerId, godStud, godUpis, godDipl) values ", 
-					"(%s,'%s',%s,%s,%s,%s)", 6);
-		
-			
-			insertTableDataGeneric("raf-simpledb/data/smer.csv", "SMER",
-					"insert into SMER(smid, smername) values ", 
-					"(%s,'%s')", 2);
-			
-			insertTableDataGeneric("raf-simpledb/data/raf_predmeti.csv", "PREDMET",
-					"insert into PREDMET(pid, predNaziv, predSmerId, predGod) values ", 
-					"(%s,'%s',%s,%s)", 4);
-			
-			
-			insertTableDataGeneric("raf-simpledb/data/ispitni_rok.csv", "ISPITNIROK",
-					"insert into ISPITNIROK(rokId, ispRokNaziv) values ", 
-					"(%s,'%s')", 2);	
-			
-			
-			insertTableDataGeneric("raf-simpledb/data/ispiti.csv", "ISPIT",
-					"insert into ISPIT(ispid, predmetid, ispitniRokId, ispUGod, ispDatum) values ", 
-					"(%s,%s,%s,%s,'%s')", 5);			
-			
-			
-			insertTableDataGeneric("raf-simpledb/data/polaganja.csv", "POLAGANJE",
-					"insert into POLAGANJE(polagStudId, ispitId, ocena) values ", 
-					"(%s,%s,%s)", 3);
-			
 
-		
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/studenti.csv",
+					"student",
+					"insert into student(sid, studname, smerid, godstud, godupis, goddipl) values ",
+					"(%s,'%s',%s,%s,%s,%s)",
+					6
+			);
+
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/smer.csv",
+					"smer",
+					"insert into smer(smid, smername) values ",
+					"(%s,'%s')",
+					2
+			);
+
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/raf_predmeti.csv",
+					"predmet",
+					"insert into predmet(pid, prednaziv, predsmerid, predgod) values ",
+					"(%s,'%s',%s,%s)",
+					4
+			);
+
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/ispitni_rok.csv",
+					"ispitnirok",
+					"insert into ispitnirok(rokid, isproknaziv) values ",
+					"(%s,'%s')",
+					2
+			);
+
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/ispiti.csv",
+					"ispit",
+					"insert into ispit(ispid, predmetid, ispitnirokid, ispugod, ispdatum) values ",
+					"(%s,%s,%s,%s,'%s')",
+					5
+			);
+
+			insertTableDataGeneric(
+					"raf-simpledb-kolokvijumA/raf-simpledb-kolokvijumA/raf-simpledb/data/polaganja.csv",
+					"polaganje",
+					"insert into polaganje(polagstudid, ispitid, ocena) values ",
+					"(%s,%s,%s)",
+					3
+			);
+
+		} catch (IOException | JSQLParserException e) {
 			e.printStackTrace();
-		} catch (JSQLParserException e) {
-            throw new RuntimeException(e);
-        }
+		}
+	}
 
+	private static void insertTableDataGeneric(
+			String fileName,
+			String tableName,
+			String insertSQLString,
+			String formatString,
+			int argNums
+	) throws IOException, JSQLParserException {
 
-    }
-	
-	private static void insertTableDataGeneric(String fileName, String tableName, String insertSQLString, String formatString, int argNums) throws IOException, JSQLParserException {
-		
 		File dataFile = new File(fileName);
-		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(dataFile)));
-		reader.readLine(); // preskace se prva linija sa nazivima kolona
-		while(true) {
+		BufferedReader reader =
+				new BufferedReader(new InputStreamReader(new FileInputStream(dataFile)));
+
+		reader.readLine(); // preskace header
+
+		while (true) {
 			String dataLine = reader.readLine();
 			if (dataLine == null)
 				break;
+
 			String[] dataFields = dataLine.split(",");
 			String values = String.format(formatString, (Object[]) dataFields);
-			
-			
+
 			MainQueryRunner.executeSQLUpdate(insertSQLString + values);
 		}
+
 		reader.close();
-		System.out.println("Records for table "+tableName+" has been inserted.");
+		System.out.println("Records for table " + tableName + " have been inserted.");
 	}
 }

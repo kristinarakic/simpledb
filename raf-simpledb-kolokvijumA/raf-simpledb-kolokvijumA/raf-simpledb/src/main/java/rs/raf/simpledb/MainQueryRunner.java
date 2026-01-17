@@ -25,7 +25,7 @@ public class MainQueryRunner {
 	public static void main(String[] args) {
 		try {
 			
-			boolean isnew = initDB("fakultet2");
+			boolean isnew = initDB("fakultet10");
 			
 			if (isnew)
             {
@@ -33,7 +33,7 @@ public class MainQueryRunner {
                 genericInsertDBData();
             }
 			else
-				System.out.println("Baza fakultet is already created!");
+				System.out.println("Baza fakultet10 is already created!");
 			
 			/*
 			Šema baze je sledeca:
